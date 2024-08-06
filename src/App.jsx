@@ -1,44 +1,56 @@
-import { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-const App = () => {
-  const [count, setCount] = useState(0);
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+// import Navbar from "./Navbar/Navbar";
+// import NavbarHook from "./NavbarHook/NavbarHook";
+import NavbarHook from "./Components/NavbarHook";
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import News from "./Pages/News";
+import AutomotiveGallery from "./Components/AutomotiveGallery";
+const AppContent = () => {
+  const location = useLocation();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Vite + React</h1>
-        <p>
-          <button onClick={() => setCount(count => count + 1)}>
-            count is {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.klslkds
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://react.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <>
+      {location.pathname === '/' && <VideoBackground />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/news/automotive" element={<AutomotiveGallery />} />
+        <Route path="/news/portrait" element={<h2>hi portrait</h2>} />
+        {/* Define other routes that you need */}
+      </Routes>
+    </>
+  );
+};
+
+
+
+const VideoBackground = () => {
+  return (
+    <div className="video-background">
+      <video autoPlay muted loop className="video-element">
+        <source src="/fast_car.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="overlay-text">
+        <h1>PHOTOGRAPHER X GRAPHIC DESIGNER</h1>
+        {/* <p>Some additional information</p> */}
+      </div>
     </div>
+  );
+};
+const App = () => {
+  // const location = useLocation()
+  return (
+    <Router>
+      {/* <Navbar /> */}
+      <NavbarHook />
+      <main className="main-content">
+      <AppContent />
+      </main>
+    </Router>
   );
 };
 

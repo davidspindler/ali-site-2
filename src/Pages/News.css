@@ -1,20 +1,17 @@
-/* .main-content {
-  padding-top: 5rem;
-  padding-left: 1rem;
-} */
-.video-background {
+
+.pic-background {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height */
   overflow: hidden;
 }
 
-.video-element {
+.pic-element {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   object-fit: cover;
 }
 
@@ -36,4 +33,10 @@
 .overlay-text p {
   font-size: 1.5rem;
   margin: 0;
+}
+.first {
+    /* margin-right: 200px; */
+    /* padding-top: 200px; */
+    padding-right: 200px;
+    /* border: 1px solid white */
 }
