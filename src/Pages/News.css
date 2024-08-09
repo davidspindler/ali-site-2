@@ -40,3 +40,11 @@
     padding-right: 200px;
     /* border: 1px solid white */
 }
+.linkClassName {
+  text-decoration: none;
+  color: white;
+}
+.linkClassNameFirst {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}

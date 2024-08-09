@@ -72,7 +72,7 @@ const NavbarHook = () => {
             className={`${linkClassName} ${buttonClassName}`}
             onClick={closeMobileMenu}
           >
-            Get Started
+            CONTACT
           </NavLink>
         </li>
       </ul>

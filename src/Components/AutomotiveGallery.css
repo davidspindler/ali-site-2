@@ -16,13 +16,30 @@
     object-position: center;
     object-fit: cover;
 }
+.blur-load, .loaded {
+    /* border: 2px solid blue; */
+    opacity: 1 !important;
+  }
 
+.blur-load {
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid red; */
+}
+.blur-load > img {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+/* ul li{
+    list-style: none;
+} */
 
 @media screen and (max-width: 780px){
     /* section five */
     .ulimage{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            padding: 0;
     }
 }
 @media screen and (max-width: 550px){
@@ -37,14 +54,3 @@
             grid-template-columns: 1fr;
     }
 }
-.blur-load {
-    background-size: cover;
-    background-position: center;
-}
-.blur-load.loaded img {
- opacity: 1;
-}
- .blur-load > img {
-    opacity: 0;
-    transition: opacity 200ms ease-in-out;
- }

@@ -9,7 +9,7 @@ const VideoBackground = ({subtext, source1}) => {
         <div className="overlay-text">
         <NavLink
             to={subtext}
-            className={""}
+            className={"linkClassNameFirst"}
             // onClick={}
           >
            <h1 className="first">

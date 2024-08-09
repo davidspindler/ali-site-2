@@ -18,7 +18,7 @@ const AppContent = () => {
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/automotive" element={<AutomotiveGallery />} />
-        <Route path="/news/portrait" element={<h2>hi portrait</h2>} />
+        <Route path="/news/portrait" element={<h2>I will be the future PORTRAIT PHOTO GALLERY</h2>} />
         {/* Define other routes that you need */}
       </Routes>
     </>
