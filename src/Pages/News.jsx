@@ -36,8 +36,8 @@ const News = () => {
     <div>
         {/* <h2>AUTOMOTIVE</h2>
         <h2>PORTRAIT</h2> */}
-        <VideoBackground subtext={"AUTOMOTIVE"} source1="automotive.jpg"/>
-        <VideoBackground subtext={"PORTRAIT"} source1="portrait.jpg"/>
+        <VideoBackground subtext={"AUTOMOTIVE"} source1="Rear-Shot.jpg"/>
+        <VideoBackground subtext={"PORTRAIT"} source1="YL-LIBRARY-3.jpg"/>
         {/* <VideoBackground subtext={"PORTRAIT"} sourc1="automotive.jpg"/> */}
         {/* <img src="Artboard1.jpg" alt=""/> */}
     {/* <ul className="ulimage" id="ulimages">

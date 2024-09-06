@@ -2,10 +2,24 @@
 .pic-background {
   position: relative;
   width: 100%;
-  height: 80vh; /* Full viewport height */
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
 }
-
+img {
+  width:100%;
+}
+@media screen and (max-width: 750px){
+  .pic-background {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+img {
+  width: 100%;
+  object-fit: cover;
+}
+}
 .pic-element {
   position: absolute;
   top: 0;
@@ -48,3 +62,13 @@
   text-decoration: none;
   color: rgb(190, 190, 190);
 }
+
+/* @media screen and (max-width: 550px){
+.overlay-text {
+  color: black;
+}
+h1 {
+  font-size: 1rem;
+  color: black;
+}
+} */

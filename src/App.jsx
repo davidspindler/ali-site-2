@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import News from "./Pages/News";
 import AutomotiveGallery from "./Components/AutomotiveGallery";
+import PortraitGallery from "./Components/PortraitGallery";
 const AppContent = () => {
   const location = useLocation();
 
@@ -16,9 +17,15 @@ const AppContent = () => {
       {location.pathname === '/' && <VideoBackground />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/news/automotive" element={<AutomotiveGallery />} />
-        <Route path="/news/portrait" element={<h2>I will be the future PORTRAIT PHOTO GALLERY</h2>} />
+        <Route path="/portfolio" element={<News />} />
+        <Route path="/portfolio/automotive" element={<AutomotiveGallery />} />
+        <Route path="/portfolio/portrait" element={<PortraitGallery />} />
+        <Route path="/about" element={<div><h2>Photography</h2>
+                    <h3 id="Phostext">I am Phos("light") Graphis("stylus") One who draws with light</h3>
+                    <blockquote>
+                        "Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever ... It remembers little things, long after you have forgotten everything."
+                        <span>-Aaron Siskind</span>
+                    </blockquote></div>} />
         {/* Define other routes that you need */}
       </Routes>
     </>
