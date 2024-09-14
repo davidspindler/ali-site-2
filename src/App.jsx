@@ -43,7 +43,6 @@ const VideoBackground = () => {
       </video>
       <div className="overlay-text">
         <h1>PHOTOGRAPHER X GRAPHIC DESIGNER</h1>
-        {/* <p>Some additional information</p> */}
       </div>
     </div>
   );

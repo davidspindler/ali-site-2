@@ -148,7 +148,7 @@ console.log(blurDivRefs)
            style={{ backgroundImage: `url('/blur/Artboard1.jpg')` }}
           >
             <img
-              src="/Artboard1.jpg"
+              src="/Rear-Shot.jpg"
               alt=""
               loading="lazy"
               className='imageshome'
